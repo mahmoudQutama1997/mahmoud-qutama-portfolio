@@ -1,0 +1,243 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+/* 
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+} */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #7c7a7a;
+    --foreground: #726868;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7d851;
+}
+/* .main{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-left: 10px;
+ 
+} */
+/* h1{
+  background-color: rgb(102, 194, 194);
+  padding: 8px 10px;
+  display: inline-block;
+  margin: auto;
+  border-radius: 6%;
+  box-shadow:4px 4px 4px  2px blue;
+
+} */
+.header ul{
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+  
+}
+.header{
+  margin: 50px auto;   /* ← أهم سطر */
+  width: fit-content;
+  background-color: #eee3e3;
+  padding: 12px 20px;
+  border: 4px solid rgb(65, 64, 63);
+  box-shadow: 10px 10px 10px rgb(27, 27, 27);
+}
+.image img{
+  width:200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 8px 8px 8px 8px rgb(46, 45, 45);
+  margin-left: 50px
+
+
+}
+
+
+
+svg{
+  margin-left: 250px;
+
+}
+h1,p{
+ margin-left: 50px;
+}
+p{
+  width: 800px;
+  font-size: small;
+  margin-top: 20px;
+}
+.midd{
+  display: flex;
+  flex-direction: row;
+}
+.laptob {
+  width: 350px;
+  height: auto;
+  border: 20px solid #f7d851;;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 10px 10px 10px 25px  rgba(54, 53, 53, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  bottom: 100px;
+  left: 200px;
+}
+
+.laptob:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+.projects{
+  display: flex;
+  flex-direction: column;
+  width:300px;
+  height: 350px ;
+  border:4px solid silver;
+  margin-left: 50px;
+  align-items:start;
+  text-align: left;
+}
+.png img{
+  width: 300px;
+  height:150px;
+}
+.projects h1,.uni{
+  position: relative;
+  right: 50px;
+  width: 300px;
+}
+
+/* footer */
+.project-footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px;
+  border-top:1px solid #ddd;
+}
+
+.icons i{
+  margin-right:10px;
+  font-size:18px;
+  cursor:pointer;
+}
+
+.more{
+  font-size:14px;
+  cursor:pointer;
+  color:#555;
+  position: relative;
+  left: 150px;
+}
+
+.Mainn{
+ 
+  gap:50px;
+}
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Badge Colors */
+.badge.django { background: #092e20; }
+.badge.react { background: #61dafb; color: #000; }
+.badge.node { background: #3c873a; }
+.badge.express { background: #000; }
+.badge.mongodb { background: #4db33d; }
+.badge.mysql { background: #00758f; }
+
+.project-footer {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn.live {
+  background: #000;
+  color: #fff;
+}
+
+.btn.source {
+  border: 2px solid #000;
+  color: #000;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.cv-btn {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 50px;
+  padding: 10px 18px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  border-radius: 12px;
+  box-shadow: 6px 6px 0px #333;
+  transition: all 0.3s ease;
+}
+
+.cv-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 10px 10px 0px #111;
+}
+.header ul{
+  display: flex;
+  gap: 30px;
+}
+
+.header li{
+  font-size: 1rem;
+  font-weight: 600;
+}
+
