@@ -12,7 +12,7 @@ export default function Project() {
           {/* Project 1 */}
           <div className="projects">
             <div className="png">
-              <img src="one.png" alt="Project" />
+              <img src="one.jpg" alt="Project" />
             </div>
 
             <h1>Django Project</h1>
@@ -52,7 +52,7 @@ export default function Project() {
           {/* Project 2 */}
           <div className="projects">
             <div className="png">
-              <img src="two.png" alt="Project" />
+              <img src="two.jpg" alt="Project" />
             </div>
 
             <h1>Node & Express Project</h1>
@@ -90,7 +90,7 @@ export default function Project() {
           {/* Project 3 */}
           <div className="projects">
             <div className="png">
-              <img src="three.png" alt="Project" />
+              <img src="three.jpg" alt="Project" />
             </div>
 
             <h1>Django Project</h1>
